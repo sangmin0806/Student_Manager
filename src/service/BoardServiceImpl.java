@@ -6,6 +6,7 @@ import dto.BoardDTO;
 import dto.PrizeDTO;
 import exception.DMLException;
 import exception.SearchWrongException;
+import view.Major;
 import view.MenuView;
 
 import java.util.List;
@@ -70,9 +71,9 @@ public class BoardServiceImpl implements BoardService, BoardOperationService{
     @Override
     public String maxAvg() {
 
-        String com = String.valueOf(MenuView.Major.컴퓨터);
-        String information = String.valueOf(MenuView.Major.정보통신);
-        String media = String.valueOf(MenuView.Major.미디어소프트);
+        String com = String.valueOf(Major.컴퓨터);
+        String information = String.valueOf(Major.정보통신);
+        String media = String.valueOf(Major.미디어소프트);
         int comAvg = majorAvg(com);
         int informationAvg = majorAvg(information);
         int mediaAvg = majorAvg(media);

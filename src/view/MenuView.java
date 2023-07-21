@@ -7,6 +7,7 @@ import dto.PrizeDTO;
 
 import java.util.Scanner;
 
+
 public class MenuView {
    static Scanner sc =new Scanner(System.in);
  
@@ -73,9 +74,7 @@ public class MenuView {
 			}
          }//while문
     }
-	public enum Major {
-	   정보통신,컴퓨터,미디어소프트
-	}
+
 	public static void maxAvg(){
 	   BoardController.maxAvg();
 	}
